@@ -22,6 +22,7 @@ export default defineConfig({
         alias: {
             '@layouts': fileURLToPath(new URL('./resources/js/Layouts', import.meta.url)),
             '@components': fileURLToPath(new URL('./resources/js/Components', import.meta.url)),
+            '@icons': fileURLToPath(new URL('./resources/js/assets/icons', import.meta.url)),
         }
     }
 });
