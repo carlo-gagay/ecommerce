@@ -1,0 +1,10 @@
+@layer components {
+    
+    .btn {
+        @apply rounded px-4 py-2;
+
+        &.primary {
+            @apply bg-blue-500;
+        }
+    }
+}
