@@ -2,6 +2,7 @@ import { fileURLToPath, URL } from 'url';
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 import vue from '@vitejs/plugin-vue';
+import svgLoader from 'vite-svg-loader';
 
 export default defineConfig({
     plugins: [
@@ -17,12 +18,13 @@ export default defineConfig({
                 },
             },
         }),
+        svgLoader()
     ],
     resolve: {
         alias: {
             '@layouts': fileURLToPath(new URL('./resources/js/Layouts', import.meta.url)),
             '@components': fileURLToPath(new URL('./resources/js/Components', import.meta.url)),
-            '@icons': fileURLToPath(new URL('./resources/js/assets/icons', import.meta.url)),
+            '@icons': fileURLToPath(new URL('./resources/assets/icons', import.meta.url)),
         }
     }
 });
