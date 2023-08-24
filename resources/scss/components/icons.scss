@@ -1,27 +1,29 @@
-.icon {
-    @apply w-4 h-4;
-
-    &.xs {
-        @apply w-1 h-1;
-    }
-
-    &.sm {
-        @apply w-2 h-2;
-    }
-
-    &.md {
+@layer components {
+    .icon {
         @apply w-4 h-4;
-    }
-
-    &.lg {
-        @apply w-6 h-6;
-    }
-
-    &.xl {
-        @apply w-8 h-8;
-    }
-
-    &.primary {
-        @apply text-blue-500;
+    
+        &.xs {
+            @apply w-1 h-1;
+        }
+    
+        &.sm {
+            @apply w-2 h-2;
+        }
+    
+        &.md {
+            @apply w-4 h-4;
+        }
+    
+        &.lg {
+            @apply w-6 h-6;
+        }
+    
+        &.xl {
+            @apply w-8 h-8;
+        }
+    
+        &.primary {
+            @apply text-blue-500;
+        }
     }
 }

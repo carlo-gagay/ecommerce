@@ -1,5 +1,5 @@
 <script setup>
-import MenuIcon from "@icons/menu.svg"
+import {IconInventory, IconMenu, IconProducts, IconSettings2, IconUser} from "@icons"
 import {Link} from "@inertiajs/vue3"
 </script>
 
@@ -8,21 +8,37 @@ import {Link} from "@inertiajs/vue3"
         <div class="inner">
             <div class="start-section">
                 <Link :href="route('home')" class="branding">
-                    <MenuIcon class="icon"/>
+                    <IconMenu class="icon"/>
                     <h2>Ecommerce</h2>
                 </Link>
                 <div class="nav-links">
-                    <ul class="navs">
+                    <ul class="nav inline">
                         <li>
-                            <Link :href="route('home')">
-                                Link One
+                            <Link class="btn with-icon primary-inline" :href="route('home')">
+                                <IconProducts class="icon"/> <span>Products</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link class="btn with-icon primary-inline" :href="route('home')">
+                                <IconInventory class="icon"/> <span>Inventory</span>
                             </Link>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="end-section">
-
+                <ul class="nav inline">
+                    <li>
+                        <button class="btn-icon primary">
+                            <IconSettings2 class="icon lg"/>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="btn-icon primary">
+                            <IconUser class="icon lg"/>
+                        </button>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
@@ -30,7 +46,7 @@ import {Link} from "@inertiajs/vue3"
 
 <style scoped lang="scss">
 #top-header {
-    @apply p-2 bg-[#172B4D];
+    @apply py-2 px-4 bg-violet-900;
 
     .inner {
         @apply flex justify-between items-center;
@@ -45,19 +61,15 @@ import {Link} from "@inertiajs/vue3"
                     @apply text-lg px-2 font-bold;
                 }
             }
-
-            .nav-links {
-
-                .nav {
-
-                    
-                }
-            }
         }
 
         .end-section {
 
         }
     }
+}
+
+.nav {
+    @apply px-4 text-slate-200;
 }
 </style>

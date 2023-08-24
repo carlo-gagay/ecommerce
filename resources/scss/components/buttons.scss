@@ -3,8 +3,35 @@
     .btn {
         @apply rounded px-4 py-2;
 
+        &.with-icon {
+            @apply py-1 px-2 flex flex-row items-center gap-x-1
+        }
+    }
+
+    .btn-icon {
+        @apply flex flex-row items-center p-1 rounded gap-x-1;
+    }
+
+    .btn, .btn-icon {
+
         &.primary {
-            @apply bg-blue-500;
+            @apply bg-violet-500;
+
+            &:hover {
+                @apply bg-violet-700;
+            }
+
+            &:active {
+                @apply bg-violet-800;
+            }
+        }
+
+        &.primary-inline {
+            @apply text-slate-50 bg-transparent;
+
+            &:hover {
+                @apply bg-violet-500;
+            }
         }
     }
 }
