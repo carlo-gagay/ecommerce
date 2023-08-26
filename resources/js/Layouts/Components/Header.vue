@@ -4,7 +4,7 @@ import {Link} from "@inertiajs/vue3"
 </script>
 
 <template>
-    <div id="top-header">
+    <header id="top-header">
         <div class="inner">
             <div class="start-section">
                 <Link :href="route('home')" class="branding">
@@ -41,12 +41,12 @@ import {Link} from "@inertiajs/vue3"
                 </ul>
             </div>
         </div>
-    </div>
+    </header>
 </template>
 
 <style scoped lang="scss">
 #top-header {
-    @apply py-2 px-4 bg-violet-900;
+    @apply py-2 px-4 bg-violet-900 sticky top-0 z-40;
 
     .inner {
         @apply flex justify-between items-center;

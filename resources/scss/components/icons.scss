@@ -21,6 +21,10 @@
         &.xl {
             @apply w-8 h-8;
         }
+
+        &.s150 {
+            @apply w-[150px] h-[150px];
+        }
     
         &.primary {
             @apply text-blue-500;
