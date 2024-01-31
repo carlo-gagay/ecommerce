@@ -1,7 +1,9 @@
 <script setup>
-import {LayoutComponentTopHeader} from "@layouts/Components"
+import { Head } from "@inertiajs/vue3";
+import { LayoutComponentTopHeader } from "@layouts/Components";
 </script>
 
 <template>
-    <LayoutComponentTopHeader/>
+    <Head title="Welcome" />
+    <LayoutComponentTopHeader />
 </template>

@@ -1,5 +1,3 @@
-import LayoutComponentTopHeader from "./TopHeader.vue"
+import LayoutComponentTopHeader from "./TopHeader.vue";
 
-export {
-    LayoutComponentTopHeader,
-}
+export { LayoutComponentTopHeader };

@@ -8,5 +8,5 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
-@import "./components/icons.scss";
-@import "./components/buttons.scss";
+@import url('./base.scss');
+@import url('./components/_main.scss');
